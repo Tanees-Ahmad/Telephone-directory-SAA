@@ -5,38 +5,6 @@ body {
   background-color: #f4f4f4;
 }
 
-.navbar {
-  background-color: #333;
-  overflow: hidden;
-}
-
-.navbar-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.navbar-item {
-  flex: 1;
-}
-
-.navbar-link {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar-link:hover:not(.active) {
-  background-color: #111;
-}
-
-.navbar-link.active {
-  background-color: #04AA6D;
-}
-
 header {
   background-color: #007bff;
   color: white;
