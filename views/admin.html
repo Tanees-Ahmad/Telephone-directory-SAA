@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </header>
+    <main>
+        <h2>Add Record</h2>
+        <form id="addRecordForm" class="record-form">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+            <input type="text" name="department" id="department" placeholder="Department" required>
+            <button type="submit">Add Record</button>
+        </form>
+        <h2>Upload PDF</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="pdf" accept="application/pdf" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="records"></div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
